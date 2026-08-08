@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import Navbar from "../components/layout/Navbar";
 import Stats from "../components/landing/Stats";
 import Features from "../components/landing/Features";
@@ -12,45 +14,78 @@ export default function Landing() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
+      <motion.section
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        className="relative overflow-hidden"
+      >
 
-        {/* Background Gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/20 via-transparent to-purple-600/20"></div>
+        {/* Background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/20 via-transparent to-purple-600/20" />
 
         <div className="relative max-w-6xl mx-auto px-6 py-24 text-center">
 
-          <span className="inline-block bg-indigo-500/20 text-indigo-300 px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <motion.span
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="inline-block bg-indigo-500/20 text-indigo-300 px-4 py-2 rounded-full text-sm font-medium mb-6"
+          >
             🚀 India's #1 60-Day Coding Challenge
-          </span>
+          </motion.span>
 
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.7 }}
+            className="text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight"
+          >
             Build Your
             <span className="text-indigo-500"> Dream Career</span>
             <br />
             One Commit at a Time.
-          </h1>
+          </motion.h1>
 
-          <p className="mt-8 text-zinc-400 text-lg max-w-2xl mx-auto">
+          <motion.p
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.7 }}
+            className="mt-8 text-zinc-400 text-lg max-w-2xl mx-auto"
+          >
             Complete one coding challenge every day, maintain your GitHub
             streak, publish your learning on LinkedIn, and become visible to
             recruiters across India.
-          </p>
+          </motion.p>
 
-          <div className="flex flex-wrap justify-center gap-4 mt-10">
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7, duration: 0.6 }}
+            className="flex flex-wrap justify-center gap-4 mt-10"
+          >
 
-            <button className="bg-indigo-600 hover:bg-indigo-500 transition px-8 py-4 rounded-2xl font-semibold">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-indigo-600 hover:bg-indigo-500 transition px-8 py-4 rounded-2xl font-semibold"
+            >
               🚀 Start Challenge
-            </button>
+            </motion.button>
 
-            <button className="border border-zinc-700 hover:border-indigo-500 transition px-8 py-4 rounded-2xl">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="border border-zinc-700 hover:border-indigo-500 transition px-8 py-4 rounded-2xl"
+            >
               Learn More
-            </button>
+            </motion.button>
 
-          </div>
+          </motion.div>
 
         </div>
 
-      </section>
+      </motion.section>
 
       {/* Stats */}
       <Stats />
