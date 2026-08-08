@@ -1,16 +1,80 @@
-# React + Vite
+# 🚀 ABTalks — 60 Day Coding Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ABTalks is a student-focused coding challenge platform designed to help
+students build consistent coding habits, improve their GitHub portfolio,
+and showcase their learning journey on LinkedIn.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://abtalks-redesign-tozh.vercel.app/
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🏠 Modern landing page
+- 📊 Personalized student dashboard
+- 🔥 Coding streak tracking
+- ⭐ XP and leaderboard system
+- 📈 Challenge progress tracking
+- 🏆 Student achievements
+- 📚 Learning timeline
+- 📅 Daily coding challenges
+- 🚀 GitHub submission
+- 💼 LinkedIn submission
+- 📱 Responsive mobile design
+- 🌙 Modern dark UI
 
-## Expanding the ESLint configuration
+## 📄 Main Routes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Route | Description |
+|---|---|
+| `/` | Landing Page |
+| `/dashboard` | Student Dashboard |
+| `/day/12` | Daily Challenge |
+
+## 🛠️ Tech Stack
+
+- React
+- Vite
+- Tailwind CSS
+- React Router
+- React Icons
+- Framer Motion
+- Vercel
+
+## 📁 Project Structure
+
+```text
+src/
+├── components/
+│   ├── dashboard/
+│   ├── landing/
+│   ├── layout/
+│   └── ui/
+│
+├── pages/
+│   ├── Landing.jsx
+│   ├── Dashboard.jsx
+│   └── ChallengeDay.jsx
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+## 👨‍💻 Built By
+
+**Rudrapratap Mishra**
+
+B.Tech CSE Student
+
+## 📌 Future Improvements
+
+- User authentication
+- Database integration
+- Real GitHub API integration
+- Real leaderboard
+- Challenge completion tracking
+- Notifications
+- More daily challenges
+
+---
+
+⭐ Built with React, Vite and Tailwind CSS.
